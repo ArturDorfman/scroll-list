@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.input-wrapper {
+  display: flex;
+  overflow: hidden;
+  height: 32px;
+  background-color: #0d1117;
+  background-repeat: no-repeat;
+  border: 1px solid D#30363d;
+  border-radius: 6px;
+  box-shadow: 0 0 transparent;
+  padding: 0;
+}
+
+.inner-input {
+  height: 100%;
+  margin-bottom: 16px;
+  display: block;
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #e6edf3;
+  background-color: #0d1117;
+  border: none;
+}
+
+.inner-input:focus {
+  outline: none;
+  border-color: transparent;
+  box-shadow: 0 0 0;
+}
+
+.input-icon-wrapper {
+  @apply flex items-center justify-center grow-0 shrink-0 basis-10 h-8;
+}
+
+.input-icon {
+  @apply w-4 h-4 text-gray-300 cursor-pointer;
+}
+
+.input-icon:hover {
+  @apply text-white;
+}
+
+.submit-btn.disabled {
+  cursor: default;
+  background-color: rgba(35, 134, 54, 0.6) !important;
+}
+
+/* scrollbar style */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  visibility: visible;
+}
